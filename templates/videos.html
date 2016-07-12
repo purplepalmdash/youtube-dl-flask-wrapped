@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Video download info</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>All Downloadable Videos</h1>
+      {% for video in video_url %}
+      <a href="/static/videos/{{ video }}">{{ video }}</a>
+      <a href="/delete/{{ video }}"><img src="/static/img/fuck.png" alt="FuckYou"></a>
+      <a href="/delete/{{ video }}"> Delete this video</a>
+      <br />
+      <hr>
+      {% endfor %}
+      <h1>Click Following Links For Downloading!</h1>
+      <a href="/">Go Back To Download Page</a><br />
+    </div>
+  </body>
+</html>
